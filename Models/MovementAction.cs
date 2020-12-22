@@ -11,7 +11,7 @@ namespace CYOA_Merchant_API.Models
 
     public bool EventTrigger { get; set; }
 
-    public OnClick { get; set; }
+    public OnClick
 
   }
 }
