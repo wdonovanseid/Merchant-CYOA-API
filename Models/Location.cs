@@ -23,10 +23,10 @@ namespace CYOA_Merchant_API.Models
     public string LocationDescription { get; set; }
 
     [Required]
-    public SpecAction[] LocationSpecificActions { get; set; }
+    public SpecificAction[] LocationSpecificActions { get; set; }
 
     [Required]
-    public MoveAction[] LocationMovementActions { get; set; }
+    public MovementAction[] LocationMovementActions { get; set; }
 
   }
 }
