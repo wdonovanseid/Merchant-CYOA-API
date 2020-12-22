@@ -17,17 +17,16 @@ namespace CYOA_Merchant_API.Models
 
     [Required]
     [StringLength(20)]
-    public string LocationName { get; set; }
+    public string LocationTitle { get; set; }
 
     [Required]
-    public string LocationBreed { get; set; }
+    public string LocationDescription { get; set; }
 
     [Required]
-    [Range(0, 20, ErrorMessage = "Age must be between 0 and 20")]
-    public int LocationAge { get; set; }
+    public SpecAction[] LocationSpecificActions { get; set; }
 
     [Required]
-    public string LocationDetails { get; set; }
+    public MoveAction[] LocationMovementActions { get; set; }
 
   }
 }

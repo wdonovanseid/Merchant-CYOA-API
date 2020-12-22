@@ -15,9 +15,12 @@ namespace CYOA_Merchant_API.Models
     {
       builder.Entity<Location>()
           .HasData(
-              new Location { LocationId = 1, LocationName = "Cave", LocationDetails = "Likes knocking things over"},
-              new Location { LocationId = 2, LocationName = "Cave", LocationDetails = "Likes knocking things over"}
-
+              new Location
+              {
+                LocationId = 1,
+                LocationTitle = "Cave",
+                LocationDescription ="Likes knocking things over"
+              }
           );
     }
   }
